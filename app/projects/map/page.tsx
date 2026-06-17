@@ -129,14 +129,6 @@ export default function MapProjectPage() {
           ))}
         </div>
 
-        {/* TL 推荐语 */}
-        <div className="border-l-4 border-orange-300 bg-orange-50 rounded-r-xl px-6 py-5 mb-10">
-          <div className="text-xs text-orange-400 font-semibold mb-2">TL 推荐语</div>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            该案例是一个以体验角度驱动的典型项目，在产品方向和策略不清晰的情况下，通过多种设计分析手段挖掘明确对业务目标影响大、体验问题严重的具体原因，洞察关键解决策略。作为视觉设计转型的 UX 设计师，在跨职能的专业产出方面有超出预期的表现，可以为大家提供具备参考价值的思路。
-          </p>
-          <div className="text-xs text-gray-400 mt-3">— 团队负责人</div>
-        </div>
 
         {/* 目录图 */}
         <ProjectImage src={images.toc} alt="文档目录" className="mb-12" />
