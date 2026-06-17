@@ -117,10 +117,10 @@ export default function MapProjectPage() {
         {/* 元信息 */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 p-5 bg-gray-50 rounded-2xl">
           {[
-            { label: "分享人", value: "高永乐" },
-            { label: "更新日期", value: "2022.12.16" },
+            { label: "更新日期", value: "2022.12" },
             { label: "版本", value: "V1.0.0" },
             { label: "关键字", value: "骑手体验设计" },
+            { label: "类型", value: "自驱项目" },
           ].map((item) => (
             <div key={item.label}>
               <div className="text-xs text-gray-400 mb-1">{item.label}</div>
@@ -135,7 +135,7 @@ export default function MapProjectPage() {
           <p className="text-sm text-gray-600 leading-relaxed">
             该案例是一个以体验角度驱动的典型项目，在产品方向和策略不清晰的情况下，通过多种设计分析手段挖掘明确对业务目标影响大、体验问题严重的具体原因，洞察关键解决策略。作为视觉设计转型的 UX 设计师，在跨职能的专业产出方面有超出预期的表现，可以为大家提供具备参考价值的思路。
           </p>
-          <div className="text-xs text-gray-400 mt-3">— 李莹，到家事业群 / 设计部 / 履约产品设计组</div>
+          <div className="text-xs text-gray-400 mt-3">— 团队负责人</div>
         </div>
 
         {/* 目录图 */}
@@ -153,13 +153,13 @@ export default function MapProjectPage() {
                 <div className="text-blue-600 font-medium text-sm mb-2">骑手使用率高</div>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   骑手在配送过程中，地图是使用率非常高且重要的功能。
-                  进入详情页的骑手有 <strong>87.35%</strong> 会操作地图。
+                  骑手在配送过程中，地图是使用率非常高且重要的功能。
                 </p>
               </div>
               <div className="bg-red-50 rounded-xl p-4">
                 <div className="text-red-500 font-medium text-sm mb-2">易用性提升空间大</div>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  2021 H1 众包 App 体验评估中，订单详情页地图满意度为 <strong>3.45</strong>，低于整体满意度，体验问题间接影响履约效率。
+                  阶段性体验评估显示，订单详情页地图满意度低于整体水平，体验问题间接影响履约效率。
                 </p>
               </div>
             </div>
@@ -197,9 +197,9 @@ export default function MapProjectPage() {
                 <div className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">行为指标</div>
                 <ul className="space-y-2">
                   {[
-                    { metric: "找店时长缩短", value: "1.12s" },
-                    { metric: "找店困难运单占比减少", value: "0.87pp" },
-                    { metric: "末端找外卖柜时长缩短", value: "1.85s" },
+                    { metric: "找店时长", value: "显著缩短" },
+                    { metric: "找店困难运单占比", value: "明显减少" },
+                    { metric: "末端找外卖柜时长", value: "显著缩短" },
                   ].map((item) => (
                     <li key={item.metric} className="flex items-center gap-2 text-sm">
                       <span className="text-green-500 font-bold">↓</span>
@@ -216,7 +216,7 @@ export default function MapProjectPage() {
                   <span className="text-gray-600">地图使用满意度</span>
                   <span className="ml-auto font-bold text-green-600">+0.16</span>
                 </div>
-                <div className="text-xs text-gray-400">3.40 → 3.56（显著提升）</div>
+                <div className="text-xs text-gray-400">满意度前后测显著提升</div>
                 <div className="mt-4">
                   <div className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">其他沉淀</div>
                   <div className="text-sm text-gray-600">地图方向 GUI 专利 4 项</div>
@@ -532,7 +532,7 @@ export default function MapProjectPage() {
                 {
                   title: "地图视觉表现",
                   items: [
-                    "信息清晰度当前提升 +0.11（3.49→3.60），仍有空间",
+                    信息清晰度当前已有正向提升，仍有优化空间
                     "系统性优化地图覆盖层与底层视觉风格",
                   ],
                 },

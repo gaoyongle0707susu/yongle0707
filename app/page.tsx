@@ -7,9 +7,9 @@ export default function Home() {
       tag: "主 R · 长期方向",
       desc: "日均 120w 骑手使用场景下，系统优化地图易用性。通过实地跑单走查发现真实问题，从 0 到 1 搭建找店指引方案，提出「轻导航」模式，推动 12 个优化点落地。",
       metrics: [
-        { label: "地图满意度", value: "+0.16" },
-        { label: "末端找店时长", value: "-1.12s" },
-        { label: "找店困难运单", value: "-0.87pp" },
+        { label: "地图满意度", value: "显著提升" },
+        { label: "末端找店时长", value: "明显缩短" },
+        { label: "找店困难运单", value: "明显减少" },
       ],
       color: "from-orange-50 to-amber-50",
       border: "border-orange-100",
@@ -32,8 +32,8 @@ export default function Home() {
       tag: "轮岗 · 导师岗",
       desc: "预判风险，提前沉淀商卡规范模板（接入 18 个业务、40+ 类商卡）。精准洞察用户差异化需求，支持首页跨品类场景 Tab 方案落地。",
       metrics: [
-        { label: "GTV 增长", value: "+0.371%" },
-        { label: "交易实付增量", value: "+1180 万" },
+        { label: "GTV 增长", value: "正向提升" },
+        { label: "交易实付增量", value: "千万级" },
         { label: "商卡规范", value: "40+ 类" },
       ],
       color: "from-green-50 to-emerald-50",
@@ -44,8 +44,8 @@ export default function Home() {
       tag: "系统专项",
       desc: "结合外卖柜业务发展阶段，制定中短期目标与优先级，系统盘点找柜困难、易存错柜等核心痛点，提供解决方案并跟进落地，优化末端配送体验。",
       metrics: [
-        { label: "找外卖柜时长", value: "-1.85s" },
-        { label: "专利申请", value: "4 项" },
+        { label: "找外卖柜时长", value: "明显缩短" },
+        { label: "专利申请", value: "多项" },
         { label: "业务覆盖", value: "全链路" },
       ],
       color: "from-purple-50 to-violet-50",
@@ -59,7 +59,7 @@ export default function Home() {
     { name: "体验度量", desc: "态度指标 + 行为指标双维度，四分图满意度评估模型" },
     { name: "设计规范体系", desc: "组件库搭建、地图规范、商卡模板，提升研发效率" },
     { name: "跨职能协作", desc: "强推动力，主动对齐产研资源，自驱落地复杂方案" },
-    { name: "人才培养", desc: "担任导师岗，培养 L6 交互、L6 视觉及实习生转正" },
+    { name: "人才培养", desc: "担任导师岗，指导多名设计师成长及实习生转正" },
   ];
 
   return (
@@ -239,26 +239,13 @@ export default function Home() {
               无论是体验设计探讨、项目合作，还是对我工作感兴趣，都欢迎联系。
             </p>
             <div className="space-y-3">
-              <a
-                href="mailto:gaoyongle@meituan.com"
-                className="flex items-center gap-3 group"
-              >
-                <span className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-gray-100 transition-colors">
+              <div className="flex items-center gap-3">
+                <span className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </span>
-                <span className="text-sm text-gray-500 group-hover:text-gray-900 transition-colors">
-                  gaoyongle@meituan.com
-                </span>
-              </a>
-              <div className="flex items-center gap-3">
-                <span className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </span>
-                <span className="text-sm text-gray-500">美团 MIS：gaoyongle</span>
+                <span className="text-sm text-gray-500">欢迎通过各渠道联系我</span>
               </div>
             </div>
           </div>
