@@ -106,7 +106,7 @@ export default function MapProjectPage() {
         <div className="mb-8">
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-orange-50 text-orange-500 border border-orange-100 text-xs font-medium rounded-full px-3 py-1">主 R · 长期方向</span>
-            <span className="bg-gray-50 text-gray-500 border border-gray-100 text-xs rounded-full px-3 py-1">⭐️⭐️⭐️ DC 推荐</span>
+            <span className="bg-gray-50 text-gray-500 border border-gray-100 text-xs rounded-full px-3 py-1">⭐️⭐️⭐️ 推荐案例</span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-3">配送地图体验优化</h1>
           <p className="text-gray-500 leading-relaxed">
@@ -152,7 +152,6 @@ export default function MapProjectPage() {
               <div className="bg-blue-50 rounded-xl p-4">
                 <div className="text-blue-600 font-medium text-sm mb-2">骑手使用率高</div>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  骑手在配送过程中，地图是使用率非常高且重要的功能。
                   骑手在配送过程中，地图是使用率非常高且重要的功能。
                 </p>
               </div>
@@ -214,12 +213,12 @@ export default function MapProjectPage() {
                 <div className="flex items-center gap-2 text-sm mb-4">
                   <span className="text-green-500 font-bold">↑</span>
                   <span className="text-gray-600">地图使用满意度</span>
-                  <span className="ml-auto font-bold text-green-600">+0.16</span>
+                  <span className="ml-auto font-bold text-green-600">显著提升</span>
                 </div>
                 <div className="text-xs text-gray-400">满意度前后测显著提升</div>
                 <div className="mt-4">
                   <div className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">其他沉淀</div>
-                  <div className="text-sm text-gray-600">地图方向 GUI 专利 4 项</div>
+                  <div className="text-sm text-gray-600">地图方向 GUI 专利多项</div>
                   <div className="text-sm text-gray-600">沉淀地图规范与组件库</div>
                 </div>
               </div>
@@ -532,7 +531,7 @@ export default function MapProjectPage() {
                 {
                   title: "地图视觉表现",
                   items: [
-                    信息清晰度当前已有正向提升，仍有优化空间
+                    "信息清晰度当前已有正向提升，仍有优化空间"
                     "系统性优化地图覆盖层与底层视觉风格",
                   ],
                 },
