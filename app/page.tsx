@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   const projects = [
     {
@@ -11,6 +13,7 @@ export default function Home() {
       ],
       color: "from-orange-50 to-amber-50",
       border: "border-orange-100",
+      href: "/projects/map",
     },
     {
       title: "地图笔记（UGC）",
@@ -152,28 +155,45 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-10">代表项目</h2>
           <div className="grid sm:grid-cols-2 gap-5">
-            {projects.map((p) => (
-              <div
-                key={p.title}
-                className={`rounded-2xl border ${p.border} bg-gradient-to-br ${p.color} p-6 flex flex-col gap-4`}
-              >
-                <div>
-                  <span className="text-xs font-medium text-gray-400 bg-white/60 rounded-full px-3 py-1">
-                    {p.tag}
-                  </span>
+            {projects.map((p) => {
+              const card = (
+                <div
+                  key={p.title}
+                  className={`rounded-2xl border ${p.border} bg-gradient-to-br ${p.color} p-6 flex flex-col gap-4 ${"href" in p ? "hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer" : ""}`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-medium text-gray-400 bg-white/60 rounded-full px-3 py-1">
+                      {p.tag}
+                    </span>
+                    {"href" in p && (
+                      <span className="text-xs text-gray-400 flex items-center gap-1">
+                        查看详情
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900">{p.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed flex-1">{p.desc}</p>
+                  <div className="grid grid-cols-3 gap-2 pt-2 border-t border-white/50">
+                    {p.metrics.map((m) => (
+                      <div key={m.label} className="text-center">
+                        <div className="text-base font-bold text-gray-900">{m.value}</div>
+                        <div className="text-xs text-gray-400 mt-0.5 leading-tight">{m.label}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">{p.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed flex-1">{p.desc}</p>
-                <div className="grid grid-cols-3 gap-2 pt-2 border-t border-white/50">
-                  {p.metrics.map((m) => (
-                    <div key={m.label} className="text-center">
-                      <div className="text-base font-bold text-gray-900">{m.value}</div>
-                      <div className="text-xs text-gray-400 mt-0.5 leading-tight">{m.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+              );
+              return "href" in p ? (
+                <Link key={p.title} href={(p as { href: string }).href}>
+                  {card}
+                </Link>
+              ) : (
+                <div key={p.title}>{card}</div>
+              );
+            })}
           </div>
         </div>
       </section>
